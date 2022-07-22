@@ -1,0 +1,28 @@
+h1 {
+	color: red;
+	text-align: center;
+	border: 1px solid blue;
+}
+
+.classYellow {
+	color: yellow;
+	background: black;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.child {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+}
+
+.myimg {
+	height: 50%;
+	object-fit: cover;
+	padding: 10px;
+	border-radius: 20px;
+}
