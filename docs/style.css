@@ -1,5 +1,5 @@
 body {
-	padding-top: 70px;
+	padding-top: 4rem;
 }
 
 h1 {
@@ -26,10 +26,12 @@ h1 {
 
 .userIcon {
 	cursor: pointer;
-	width: 8vw;
-	height: 8vw;
+	width: 9vw;
+	height: 9vw;
 	max-width: 50px;
 	max-height: 50px;
+	min-width: 30px;
+	min-height: 30px;
 	border-radius: 50%;
 	object-fit: cover;
 }
