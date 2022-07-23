@@ -27,54 +27,46 @@
 		></script>
 	</head>
 	<body>
-		<h1>HELLO World</h1>
-		<p>これは最初に作成するHTMLファイルです</p>
-		<p class="classYellow">2番目の要素</p>
-		<p class="classYellow">3番目の要素</p>
-
-		<ul>
-			<li>リスト1</li>
-			<li>リスト2</li>
-			<li>リスト3</li>
-			<li>リスト4</li>
-		</ul>
-
-		<div class="flex">
-			<div class="child">横並びの要素1</div>
-			<div class="child">横並びの要素2</div>
-			<div class="child">横並びの要素3</div>
-		</div>
-
-		<nav class="navbar navbar-light bg-light">
+		<nav class="navbar navbar-light bg-light fixed-top py-1">
 			<div class="container-fluid">
 				<div class="d-flex align-content-center">
 					<i
 						class="fa-brands fa-2x fa-instagram btn"
 						style="color: #d63384"
 					></i>
-					<div class="navbar-brand" style="color: #d63384">インスタ風</div>
+					<div class="navbar-brand" style="color: #d63384">instagram</div>
 				</div>
-				<form class="d-flex">
-					<input
-						class="form-control me-2"
-						type="search"
-						placeholder="Search"
-						aria-label="Search"
-					/>
-				</form>
+				<div class="d-flex">
+					<form class="align-self-center d-none d-sm-block me-2">
+						<input
+							class="form-control"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+					</form>
+					<div class="align-self-center mx-1">
+						<i class="btn px-2 fa-solid fa-lg fa-house"></i>
+						<i class="btn px-2 fa-regular fa-lg fa-heart"></i>
+						<i class="btn px-2 fa-regular fa-lg fa-paper-plane"></i>
+						<i class="btn px-2 fa-regular fa-lg fa-compass"></i>
+						<i class="btn px-2 fa-regular fa-lg fa-comment"></i>
+						<img
+							src="./img/20210130_064705700_iOS.jpg"
+							class="userIcon border border-danger border-2 m-1"
+						/>
+					</div>
+				</div>
 			</div>
 		</nav>
 
-		<div class="row m-0 p-1">
+		<div class="row m-0 px-1">
 			<div class="card col col-12 col-lg-4">
 				<div class="d-flex justify-content-between">
 					<div>
 						<img
 							src="./img/20210130_064705700_iOS.jpg"
-							class="rounded-circle border border-danger border-2 m-1"
-							alt="..."
-							width="50"
-							height="50"
+							class="userIcon border border-danger border-2 m-1"
 						/>
 						Takuya Kitagawa
 					</div>
@@ -90,42 +82,48 @@
 					<i class="btn fa-regular fa-lg fa-comment"></i>
 					<i class="btn fa-regular fa-lg fa-paper-plane"></i>
 				</div>
-				<div class="card-body">
-					<h5 class="card-title">沖縄の思い出</h5>
-					<hr class="mb-1 mt-1" />
+				<div class="d-flex text-muted btn px-1">いいね! 14件</div>
+				<div class="d-flex flex-column mx-1">
+					<h5 class="card-title mb-1">沖縄の思い出</h5>
+					<hr class="my-1" />
 					<div class="card-subtitle text-muted mb-3">Okinawa/in the car</div>
-					<p class="card-text">
-						Some quick example text to build on the card title and make up the
-						bulk of the card's content. Some quick example text to build on the
-					</p>
-				</div>
-				<nav class="navbar navbar-light bg-light">
-					<div class="container-fluid">
-						<form class="d-flex">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="コメント"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Send
-							</button>
-						</form>
+					<div class="d-inline-block">
+						<div>
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content. Some quick example text to build on
+							the
+							<span class="readMoreText"
+								>Some quick example text to build on the card title and make up
+								the bulk of the card's content. Some quick example text to build
+								on the</span
+							>
+							<div class="btn text-muted py-0 my-0 readMore">…続きを読む</div>
+						</div>
 					</div>
-				</nav>
+				</div>
+				<div class="d-flex w-100 my-2">
+					<i class="btn fa-regular fa-lg fa-face-smile align-self-center"></i>
+					<form class="w-50">
+						<input
+							class="form-control border-0"
+							type="search"
+							placeholder="コメントを追加…"
+							aria-label="Search"
+						/>
+					</form>
+					<button class="btn text-primary" type="submit">投稿する</button>
+				</div>
 			</div>
 			<div class="card col col-12 col-sm-6 col-lg-4">
 				<div class="d-flex justify-content-between">
 					<div>
-						<img
-							src="./img/20210130_064705700_iOS.jpg"
-							class="rounded-circle border border-danger border-2 m-1"
-							alt="..."
-							width="50"
-							height="50"
-						/>
-						Takuya Kitagawa
+						<div>
+							<img
+								src="./img/20210130_064705700_iOS.jpg"
+								class="userIcon border border-danger border-2 m-1"
+							/>
+							Takuya Kitagawa
+						</div>
 					</div>
 					<div class="text-muted align-self-center">2020/10/10</div>
 				</div>
@@ -143,38 +141,40 @@
 					<h5 class="card-title">部屋の思い出</h5>
 					<hr class="mb-1 mt-1" />
 					<div class="card-subtitle text-muted mb-3">Okinawa/Our hotel</div>
-					<p class="card-text">
+					<div>
 						Some quick example text to build on the card title and make up the
 						bulk of the card's content. Some quick example text to build on the
-					</p>
-				</div>
-				<nav class="navbar navbar-light bg-light">
-					<div class="container-fluid">
-						<form class="d-flex">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="コメント"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Send
-							</button>
-						</form>
+						<span class="readMoreText"
+							>Some quick example text to build on the card title and make up
+							the bulk of the card's content. Some quick example text to build
+							on the</span
+						>
+						<div class="btn text-muted py-0 my-0 readMore">…続きを読む</div>
 					</div>
-				</nav>
+				</div>
+				<div class="d-flex w-100 my-2">
+					<i class="btn fa-regular fa-lg fa-face-smile align-self-center"></i>
+					<form class="w-50">
+						<input
+							class="form-control border-0"
+							type="search"
+							placeholder="コメントを追加…"
+							aria-label="Search"
+						/>
+					</form>
+					<button class="btn text-primary" type="submit">投稿する</button>
+				</div>
 			</div>
 			<div class="card col col-12 col-sm-6 col-lg-4">
 				<div class="d-flex justify-content-between">
 					<div>
-						<img
-							src="./img/20210130_064705700_iOS.jpg"
-							class="rounded-circle border border-danger border-2 m-1"
-							alt="..."
-							width="50"
-							height="50"
-						/>
-						Takuya Kitagawa
+						<div>
+							<img
+								src="./img/20210130_064705700_iOS.jpg"
+								class="userIcon border border-danger border-2 m-1"
+							/>
+							Takuya Kitagawa
+						</div>
 					</div>
 					<div class="text-muted align-self-center">2020/10/10</div>
 				</div>
@@ -192,38 +192,40 @@
 					<h5 class="card-title">沖縄の雨</h5>
 					<hr class="mb-1 mt-1" />
 					<div class="card-subtitle text-muted mb-3">Okinawa/Rainy day</div>
-					<p class="card-text">
+					<div>
 						Some quick example text to build on the card title and make up the
 						bulk of the card's content. Some quick example text to build on the
-					</p>
-				</div>
-				<nav class="navbar navbar-light bg-light">
-					<div class="container-fluid">
-						<form class="d-flex">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="コメント"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Send
-							</button>
-						</form>
+						<span class="readMoreText"
+							>Some quick example text to build on the card title and make up
+							the bulk of the card's content. Some quick example text to build
+							on the</span
+						>
+						<div class="btn text-muted py-0 my-0 readMore">…続きを読む</div>
 					</div>
-				</nav>
+				</div>
+				<div class="d-flex w-100 my-2">
+					<i class="btn fa-regular fa-lg fa-face-smile align-self-center"></i>
+					<form class="w-50">
+						<input
+							class="form-control border-0"
+							type="search"
+							placeholder="コメントを追加…"
+							aria-label="Search"
+						/>
+					</form>
+					<button class="btn text-primary" type="submit">投稿する</button>
+				</div>
 			</div>
 			<div class="card col col-12 col-sm-6 col-lg-4">
 				<div class="d-flex justify-content-between">
 					<div>
-						<img
-							src="./img/20210130_064705700_iOS.jpg"
-							class="rounded-circle border border-danger border-2 m-1"
-							alt="..."
-							width="50"
-							height="50"
-						/>
-						Takuya Kitagawa
+						<div>
+							<img
+								src="./img/20210130_064705700_iOS.jpg"
+								class="userIcon border border-danger border-2 m-1"
+							/>
+							Takuya Kitagawa
+						</div>
 					</div>
 					<div class="text-muted align-self-center">2020/10/10</div>
 				</div>
@@ -241,38 +243,40 @@
 					<h5 class="card-title">沖縄の道</h5>
 					<hr class="mb-1 mt-1" />
 					<div class="card-subtitle text-muted mb-3">Okinawa/Okinawa way</div>
-					<p class="card-text">
+					<div>
 						Some quick example text to build on the card title and make up the
 						bulk of the card's content. Some quick example text to build on the
-					</p>
-				</div>
-				<nav class="navbar navbar-light bg-light">
-					<div class="container-fluid">
-						<form class="d-flex">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="コメント"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Send
-							</button>
-						</form>
+						<span class="readMoreText"
+							>Some quick example text to build on the card title and make up
+							the bulk of the card's content. Some quick example text to build
+							on the</span
+						>
+						<div class="btn text-muted py-0 my-0 readMore">…続きを読む</div>
 					</div>
-				</nav>
+				</div>
+				<div class="d-flex w-100 my-2">
+					<i class="btn fa-regular fa-lg fa-face-smile align-self-center"></i>
+					<form class="w-50">
+						<input
+							class="form-control border-0"
+							type="search"
+							placeholder="コメントを追加…"
+							aria-label="Search"
+						/>
+					</form>
+					<button class="btn text-primary" type="submit">投稿する</button>
+				</div>
 			</div>
 			<div class="card col col-12 col-sm-6 col-lg-4">
 				<div class="d-flex justify-content-between">
 					<div>
-						<img
-							src="./img/20210130_064705700_iOS.jpg"
-							class="rounded-circle border border-danger border-2 m-1"
-							alt="..."
-							width="50"
-							height="50"
-						/>
-						Takuya Kitagawa
+						<div>
+							<img
+								src="./img/20210130_064705700_iOS.jpg"
+								class="userIcon border border-danger border-2 m-1"
+							/>
+							Takuya Kitagawa
+						</div>
 					</div>
 					<div class="text-muted align-self-center">2020/10/10</div>
 				</div>
@@ -295,33 +299,29 @@
 						bulk of the card's content. Some quick example text to build on the
 					</p>
 				</div>
-				<nav class="navbar navbar-light bg-light">
-					<div class="container-fluid">
-						<form class="d-flex">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="コメント"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Send
-							</button>
-						</form>
-					</div>
-				</nav>
+				<div class="d-flex w-100 my-2">
+					<i class="btn fa-regular fa-lg fa-face-smile align-self-center"></i>
+					<form class="w-50">
+						<input
+							class="form-control border-0"
+							type="search"
+							placeholder="コメントを追加…"
+							aria-label="Search"
+						/>
+					</form>
+					<button class="btn text-primary" type="submit">投稿する</button>
+				</div>
 			</div>
 			<div class="card col col-12 col-lg-4">
 				<div class="d-flex justify-content-between">
 					<div>
-						<img
-							src="./img/20210130_064705700_iOS.jpg"
-							class="rounded-circle border border-danger border-2 m-1"
-							alt="..."
-							width="50"
-							height="50"
-						/>
-						Takuya Kitagawa
+						<div>
+							<img
+								src="./img/20210130_064705700_iOS.jpg"
+								class="userIcon border border-danger border-2 m-1"
+							/>
+							Takuya Kitagawa
+						</div>
 					</div>
 					<div class="text-muted align-self-center">2020/10/10</div>
 				</div>
@@ -344,21 +344,18 @@
 						bulk of the card's content. Some quick example text to build on the
 					</p>
 				</div>
-				<nav class="navbar navbar-light bg-light">
-					<div class="container-fluid">
-						<form class="d-flex">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="コメント"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Send
-							</button>
-						</form>
-					</div>
-				</nav>
+				<div class="d-flex w-100 my-2">
+					<i class="btn fa-regular fa-lg fa-face-smile align-self-center"></i>
+					<form class="w-50">
+						<input
+							class="form-control border-0"
+							type="search"
+							placeholder="コメントを追加…"
+							aria-label="Search"
+						/>
+					</form>
+					<button class="btn text-primary" type="submit">投稿する</button>
+				</div>
 			</div>
 		</div>
 
@@ -393,5 +390,6 @@
 			</div>
 			<button type="submit" class="btn btn-primary">送信</button>
 		</form>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

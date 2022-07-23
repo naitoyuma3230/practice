@@ -20,8 +20,13 @@ h1 {
 	margin: 10px;
 }
 
-.myimg {
-	height: 50%;
+.userIcon {
+	cursor: pointer;
+	width: 8vw;
+	height: 8vw;
+	max-width: 50px;
+	max-height: 50px;
+	border-radius: 50%;
 	object-fit: cover;
 }
 
@@ -31,4 +36,8 @@ i.btn {
 
 hr {
 	color: #d63384;
+}
+
+.readMoreText {
+	display: none;
 }
