@@ -26,14 +26,9 @@ h1 {
 }
 
 i.btn {
-	color: #d63384;
+	margin: 0 -4px;
 }
 
 hr {
 	color: #d63384;
-}
-
-form.btn {
-	color: #d63384;
-	border: 1px solid #d63384;
 }
