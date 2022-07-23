@@ -23,6 +23,4 @@ h1 {
 .myimg {
 	height: 50%;
 	object-fit: cover;
-	padding: 10px;
-	border-radius: 20px;
 }
