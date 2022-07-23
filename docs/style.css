@@ -24,3 +24,16 @@ h1 {
 	height: 50%;
 	object-fit: cover;
 }
+
+i.btn {
+	color: #d63384;
+}
+
+hr {
+	color: #d63384;
+}
+
+form.btn {
+	color: #d63384;
+	border: 1px solid #d63384;
+}
